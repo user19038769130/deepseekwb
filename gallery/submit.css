@@ -1,0 +1,29 @@
+*{box-sizing:border-box;font-family:system-ui, sans-serif}
+body{background:#0f1118;color:#e2e8f0;margin:0;line-height:1.6}
+.container{max-width:860px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #273042}
+.logo{font-size:22px;font-weight:800;color:#7dd3fc;text-decoration:none}
+nav{display:flex;gap:24px}
+nav a{color:#94a3b8;text-decoration:none;font-size:15px}
+nav a:hover{color:#e2e8f0}
+.btn{padding:10px 20px;background:#3b82f6;color:#fff;border-radius:9px;text-decoration:none;font-weight:bold;border:none;cursor:pointer}
+.btn:hover{background:#2563eb}
+.btn-green{background:#10b981}
+.btn-green:hover{background:#059669}
+.page-title{font-size:28px;margin:40px 0 8px}
+.page-desc{color:#94a3b8;margin-bottom:32px}
+.form-card{background:#181c28;border:1px solid #273042;border-radius:14px;padding:24px;margin-bottom:24px}
+.form-row{margin-bottom:18px}
+label{display:block;margin-bottom:6px;color:#cbd5e1;font-size:14px}
+input,select,textarea{
+  width:100%;padding:10px 12px;background:#12151d;border:1px solid #273042;border-radius:8px;color:#e2e8f0;
+  font-size:14px;outline:none
+}
+input:focus,select:focus,textarea:focus{border-color:#3b82f6}
+.tip{font-size:12px;color:#94a3b8;margin-top:4px}
+pre{
+  background:#12151d;border:1px solid #273042;border-radius:8px;padding:16px;
+  overflow:auto;color:#a5b4fc;white-space:pre-wrap;word-break:break-all
+}
+.action-bar{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+footer{margin-top:60px;padding:24px 0;text-align:center;color:#94a3b8;font-size:14px;border-top:1px solid #273042}

@@ -1,0 +1,17 @@
+{
+  "name": "dsh-full-theme-skin",
+  "version": "0.1.1",
+  "description": "Deepseek移植，复用wb全套14套美化主题，支持静态/GIF壁纸、自定义配色、跨插件联动",
+  "author": "肆捌玖柒玖号服务工作室",
+  "type": "module",
+  "dsh": {
+    "bundle": "./cordis.patch.yml"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "theme",
+    "skin",
+    "ui美化",
+    "壁纸"
+  ]
+}

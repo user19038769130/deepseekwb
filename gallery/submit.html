@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>投稿素材｜OpenClaw 共建素材库</title>
+<link rel="stylesheet" href="./submit.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="./index.html" class="logo">OpenClaw</a>
+        <nav>
+            <a href="./index.html#materials">素材库</a>
+            <a href="#docs">文档</a>
+            <a href="#dev">开发者</a>
+        </nav>
+        <a href="./submit.html" class="btn btn-green">📤 投稿素材</a>
+    </header>
+
+    <h1 class="page-title">投稿桌面宠物素材</h1>
+    <p class="page-desc">填写信息，自动生成规范 pet.json，打包后提交PR进仓库</p>
+
+    <div class="form-card">
+        <div class="form-row">
+            <label>素材名称 displayName</label>
+            <input id="displayName" placeholder="例：吕布桌宠" required>
+        </div>
+        <div class="form-row">
+            <label>作者 author</label>
+            <input id="author" placeholder="开发者昵称">
+        </div>
+        <div class="form-row">
+            <label>分类 filterKey</label>
+            <select id="filterKey">
+                <option value="pet-sanguo">三国系列</option>
+                <option value="pet-meng">萌宠系列</option>
+                <option value="pet-meme">玩梗系列</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label>适配平台 platform</label>
+            <input id="platform" placeholder="OpenClaw / WorkBuddy" value="OpenClaw">
+        </div>
+        <div class="form-row">
+            <label>动画帧率 frameRate</label>
+            <input id="frameRate" type="number" value="8">
+            <div class="tip">推荐 6~12，一般用8</div>
+        </div>
+        <div class="form-row">
+            <label>待机帧 idle（逗号分隔文件名，顺序播放）</label>
+            <input id="idleFrames" placeholder="idle/q1.png,idle/q2.png" value="idle/q1.png">
+            <div class="tip">首图固定为封面，首页轮播自动读取这一张</div>
+        </div>
+        <div class="form-row">
+            <label>走动帧 walk（留空则不启用）</label>
+            <input id="walkFrames" placeholder="walk/w1.png,walk/w2.png">
+        </div>
+        <div class="form-row">
+            <label>点击帧 click（留空则不启用）</label>
+            <input id="clickFrames" placeholder="click/c1.png">
+        </div>
+
+        <div class="action-bar">
+            <button class="btn" onclick="generateJson()">✅ 生成 pet.json</button>
+            <button class="btn" onclick="downloadJson()">💾 下载 pet.json</button>
+        </div>
+    </div>
+
+    <div class="form-card">
+        <h3>预览 pet.json</h3>
+<pre id="outJson">填写上面表单后点【生成】</pre>
+    </div>
+
+    <div class="form-card">
+        <h3>📦 打包投稿规范（给开发者看）</h3>
+        <p>目录结构严格如下，打包zip上传仓库：</p>
+<pre>
+素材名/
+├─ pet.json
+├─ idle/
+│  └─ q1.png …
+├─ walk/
+└─ click/
+</pre>
+        <p>打包后，在仓库提交PR，管理员合并后自动进 asset-index.json，首页顶部轮播自动抓取封面。</p>
+    </div>
+
+    <footer>
+        OpenClaw 共建素材库 · 统一目录规范
+    </footer>
+</div>
+
+<script src="./submit.js"></script>
+</body>
+</html>

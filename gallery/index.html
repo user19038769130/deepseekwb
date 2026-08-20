@@ -1,0 +1,14 @@
+
+    if(t === 'submit'){
+      galleryView.style.display = 'none';
+      submitView.style.display = 'block';
+    }else{
+      galleryView.style.display = 'block';
+      submitView.style.display = 'none';
+      render(assetList.filter(x=> t==='all' || x.type===t));
+    }
+  }
+})
+</script>
+</body>
+</html>

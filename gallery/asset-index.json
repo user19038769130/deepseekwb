@@ -1,0 +1,46 @@
+{
+  "petList": [
+    {
+      "path": "lvbu",
+      "displayName": "吕布桌宠",
+      "author": "XX工作室",
+      "filterKey": "pet-sanguo",
+      "platform": "OpenClaw"
+    },
+    {
+      "path": "guanyu",
+      "displayName": "关羽桌宠",
+      "author": "XX工作室",
+      "filterKey": "pet-sanguo",
+      "platform": "OpenClaw"
+    },
+    {
+      "path": "zhaoyun",
+      "displayName": "赵云桌宠",
+      "author": "XX工作室",
+      "filterKey": "pet-sanguo",
+      "platform": "OpenClaw"
+    },
+    {
+      "path": "maomao",
+      "displayName": "猫猫萌宠",
+      "author": "XX工作室",
+      "filterKey": "pet-meng",
+      "platform": "OpenClaw"
+    },
+    {
+      "path": "laalajiao",
+      "displayName": "辣椒狗",
+      "author": "XX工作室",
+      "filterKey": "pet-meme",
+      "platform": "OpenClaw"
+    },
+    {
+      "path": "xiangjiao-mao",
+      "displayName": "香蕉猫",
+      "author": "XX工作室",
+      "filterKey": "pet-meme",
+      "platform": "OpenClaw"
+    }
+  ]
+}
