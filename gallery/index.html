@@ -1,14 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw 共建素材库</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="./index.html" class="logo">OpenClaw</a>
+        <nav>
+            <a href="#materials">素材库</a>
+            <a href="#docs">文档</a>
+            <a href="#dev">开发者</a>
+        </nav>
+        <a href="./submit.html" class="btn">📤 投稿素材</a>
+    </header>
 
-    if(t === 'submit'){
-      galleryView.style.display = 'none';
-      submitView.style.display = 'block';
-    }else{
-      galleryView.style.display = 'block';
-      submitView.style.display = 'none';
-      render(assetList.filter(x=> t==='all' || x.type===t));
-    }
-  }
-})
-</script>
+    <section class="hero">
+        <h1>共建桌面宠物素材库</h1>
+        <p>预览、下载、投稿桌面宠物与技能皮肤包，统一规范，分类存放，不乱丢。</p>
+
+        <!-- 4个推荐预览轮播区域 -->
+        <div class="recommend-wrap">
+            <div class="recommend-track" id="recommendTrack">
+                <div class="recommend-item">空位1</div>
+                <div class="recommend-item">空位2</div>
+                <div class="recommend-item">空位3</div>
+                <div class="recommend-item">空位4</div>
+            </div>
+        </div>
+
+        <div class="hero-actions">
+            <a href="#materials" class="btn">浏览素材</a>
+            <a href="./submit.html" class="btn" style="background:#10b981">如何投稿</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">128</div>
+                <div class="stat-label">套素材</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">32</div>
+                <div class="stat-label">位开发者</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">4</div>
+                <div class="stat-label">个分类</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">v1</div>
+                <div class="stat-label">规范版本</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories">
+        <h2 class="section-title">分类导航</h2>
+        <div class="category-grid">
+            <div class="category-card" onclick="setFilter('all')">
+                <div class="category-name">全部素材</div>
+                <div class="category-desc">浏览所有桌面宠物与技能皮肤包</div>
+            </div>
+            <div class="category-card" onclick="setFilter('pet-sanguo')">
+                <div class="category-name">三国系列</div>
+                <div class="category-desc">关羽、吕布、赵云等武将桌宠</div>
+            </div>
+            <div class="category-card" onclick="setFilter('pet-meng')">
+                <div class="category-name">萌宠系列</div>
+                <div class="category-desc">猫咪、狗狗、可爱日常素材</div>
+            </div>
+            <div class="category-card" onclick="setFilter('pet-meme')">
+                <div class="category-name">玩梗系列</div>
+                <div class="category-desc">表情、整活、网络热梗素材</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="materials">
+        <h2 class="section-title">素材列表</h2>
+        <div class="grid" id="gallery"></div>
+        <div class="empty" id="emptyTip" style="display:none">该分类暂无素材，欢迎开发者投稿！</div>
+    </section>
+
+    <footer>
+        OpenClaw 共建素材库 · 遵循统一目录规范 · 分类存放，不乱丢
+    </footer>
+</div>
+
+<div class="modal" id="previewModal">
+    <span class="close" onclick="closeModal()">×</span>
+    <div class="modal-wrap">
+        <div class="anim-preview">
+            <img id="animImg" />
+        </div>
+        <div class="action-group">
+            <button data-act="idle">待机 idle</button>
+            <button data-act="walk">走动 walk</button>
+            <button data-act="click">点击 click</button>
+        </div>
+        <div style="margin-top:16px;color:#cbd5e1">
+            <div id="modalName"></div>
+            <div id="modalMeta"></div>
+        </div>
+        <a class="dl-btn" id="modalDl" style="margin-top:14px" download>📥 下载整套素材包</a>
+    </div>
+</div>
+
+<script src="./main.js"></script>
 </body>
 </html>
