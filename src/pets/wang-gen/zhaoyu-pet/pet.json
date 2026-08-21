@@ -1,0 +1,20 @@
+{
+  "petId": "pig-pet",
+  "petName": "bbzhu · 饲料猪",
+  "author": "肆捌玖柒玖号服务工作室",
+  "version": "0.1.0",
+  "width": 180,
+  "height": 220,
+  "fps": 10,
+  "defaultState": "idle",
+  "animations": {
+    "idle": {
+      "folder": "./idle",
+      "loop": true
+    },
+    "click": {
+      "folder": "./click",
+      "loop": false
+    }
+  }
+}
