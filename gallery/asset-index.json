@@ -1,13 +1,13 @@
 [
     {
         "name": "奶牛",
-        "category": "萌宠动物2",
+        "category": "cute-pets",
         "studio": "四八九七九工作室",
         "folder": "cow-pet",
-        "cover": "assets/gallery/萌宠动物2/cow-pet/aa2.png",
+        "cover": "assets/gallery/cute-pets/cow-pet/aa2.png",
         "previews": [
-            "assets/gallery/萌宠动物2/cow-pet/aa9.png",
-            "assets/gallery/萌宠动物2/cow-pet/aaa2.gif"
+            "assets/gallery/cute-pets/cow-pet/aa9.png",
+            "assets/gallery/cute-pets/cow-pet/aaa2.gif"
         ]
     }
 ]
