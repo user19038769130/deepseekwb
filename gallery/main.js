@@ -1,3 +1,4 @@
+
 const galleryEl = document.getElementById('gallery')
 const emptyTip = document.getElementById('emptyTip')
 const modal = document.getElementById('previewModal')
@@ -20,13 +21,12 @@ function autoSlide(){
     track.style.transform = `translateX(-${slidePos * 100}%)`
 }
 let slideTimer = setInterval(autoSlide, 3500);
-// 鼠标悬停暂停
 track.onmouseenter = ()=> clearInterval(slideTimer);
 track.onmouseleave = ()=> slideTimer = setInterval(autoSlide,3500);
-// ========== ✅ 直接完整绝对地址 ==========
-fetch('https://user19038769130.github.io/deepseekwb/assets/gallery/asset-index.json')
+// ========== ✅ 最终正确路径 ==========
+fetch('../assets/gallery/asset-index.json')
 .then(res=>{
-    if(!res.ok) throw new Error('404找不到')
+    if(!res.ok) throw new Error('找不到文件')
     return res.json()
 })
 .then(list=>{
@@ -41,7 +41,7 @@ fetch('https://user19038769130.github.io/deepseekwb/assets/gallery/asset-index.j
     emptyTip.innerText = "素材清单 asset-index.json 加载失败"
     console.error(err)
 })
-// 填充顶部4个推荐预览【适配cover】
+// 填充顶部4个推荐预览
 function fillRecommendTop4(top4){
     if(!Array.isArray(top4)) return
     const domList = track.querySelectorAll('.recommend-item');
@@ -50,7 +50,7 @@ function fillRecommendTop4(top4){
         domList[idx].innerHTML = `<img src="${item.cover}" alt="${item.name}">`
     })
 }
-// ========== render渲染【终极兜底】==========
+// ========== 渲染 ==========
 function render(){
     galleryEl.innerHTML = ""
     const safeList = Array.isArray(rawList) ? rawList : []
@@ -73,7 +73,7 @@ function render(){
                 <span class="card-tag">${item.category}</span>
                 <div class="card-title">${item.name}</div>
                 <div class="card-meta">作者：${item.studio}</div>
-                <a class="dl-btn" href="${item.cover}" download>📥 下载预览图</a>
+                <a class="dl-btn" href="${thumbSrc}" download>📥 下载预览图</a>
             </div>
         `
         card.onclick = ()=> openPetPreview(item)
