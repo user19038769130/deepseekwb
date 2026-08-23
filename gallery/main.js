@@ -1,4 +1,3 @@
-
 const galleryEl = document.getElementById('gallery')
 const emptyTip = document.getElementById('emptyTip')
 const modal = document.getElementById('previewModal')
@@ -23,7 +22,7 @@ function autoSlide(){
 let slideTimer = setInterval(autoSlide, 3500);
 track.onmouseenter = ()=> clearInterval(slideTimer);
 track.onmouseleave = ()=> slideTimer = setInterval(autoSlide,3500);
-// ========== ✅ 最终正确路径 ==========
+// ========== ✅ JSON读取路径 ==========
 fetch('../assets/gallery/asset-index.json')
 .then(res=>{
     if(!res.ok) throw new Error('找不到文件')
@@ -47,7 +46,8 @@ function fillRecommendTop4(top4){
     const domList = track.querySelectorAll('.recommend-item');
     top4.forEach((item,idx)=>{
         if(!domList[idx]) return;
-        domList[idx].innerHTML = `<img src="${item.cover}" alt="${item.name}">`
+        // 重点：图片前面补 ../
+        domList[idx].innerHTML = `<img src="../${item.cover}" alt="${item.name}">`
     })
 }
 // ========== 渲染 ==========
@@ -66,14 +66,15 @@ function render(){
     filterList.forEach(item=>{
         const card = document.createElement('div')
         card.className = 'card'
-        const thumbSrc = item.cover
+        // ✅ 这里也补 ../ 修正图片路径！
+        const thumbSrc = `../${item.cover}`
         card.innerHTML = `
             <img class="card-img" src="${thumbSrc}" onerror="this.style.display='none'">
             <div class="card-body">
                 <span class="card-tag">${item.category}</span>
                 <div class="card-title">${item.name}</div>
                 <div class="card-meta">作者：${item.studio}</div>
-                <a class="dl-btn" href="${thumbSrc}" download>📥 下载预览图</a>
+                <a class="dl-btn" href="../${item.cover}" download>📥 下载预览图</a>
             </div>
         `
         card.onclick = ()=> openPetPreview(item)
@@ -85,7 +86,8 @@ async function openPetPreview(petMeta){
     currentPet = petMeta
     modalName.innerText = petMeta.name
     modalMeta.innerText = `分类：${petMeta.category}`
-    modalDl.href = petMeta.cover
+    // ✅ 弹窗里面图片链接同样补 ../
+    modalDl.href = `../${petMeta.cover}`
     modal.classList.add('show')
 }
 function setFilter(kat){
