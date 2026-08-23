@@ -23,29 +23,31 @@ let slideTimer = setInterval(autoSlide, 3500);
 // 鼠标悬停暂停
 track.onmouseenter = ()=> clearInterval(slideTimer);
 track.onmouseleave = ()=> slideTimer = setInterval(autoSlide,3500);
-// ========== 素材列表原有逻辑 ==========
-fetch('./assets/gallery/asset-index.json')
+// ========== 素材列表【✅直接写完整网址，不猜相对路径】 ==========
+fetch('https://user19038769130.github.io/deepseekwb/assets/gallery/asset-index.json')
 .then(res=>res.json())
 .then(list=>{
-    rawList = list
+    rawList = Array.isArray(list) ? list : []
     render()
-    // ✅ 自动拿最新4个填充顶部推荐轮播
-    fillRecommendTop4(list.slice(0,4))
+    if(rawList.length>0){
+        fillRecommendTop4(rawList.slice(0,4))
+    }
 })
 .catch(err=>{
     emptyTip.style.display = "block"
     emptyTip.innerText = "素材清单 asset-index.json 加载失败"
     console.error(err)
 })
-// 填充顶部4个推荐预览【已适配cover】
+// 填充顶部4个推荐预览【适配cover】
 function fillRecommendTop4(top4){
+    if(!Array.isArray(top4)) return
     const domList = track.querySelectorAll('.recommend-item');
     top4.forEach((item,idx)=>{
         if(!domList[idx]) return;
         domList[idx].innerHTML = `<img src="${item.cover}" alt="${item.name}">`
     })
 }
-// ========== render渲染【双重兜底防报错 + 适配你的json字段】==========
+// ========== render渲染【终极兜底】==========
 function render(){
     galleryEl.innerHTML = ""
     const safeList = Array.isArray(rawList) ? rawList : []
