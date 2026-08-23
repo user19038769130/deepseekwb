@@ -23,9 +23,12 @@ let slideTimer = setInterval(autoSlide, 3500);
 // 鼠标悬停暂停
 track.onmouseenter = ()=> clearInterval(slideTimer);
 track.onmouseleave = ()=> slideTimer = setInterval(autoSlide,3500);
-// ========== 素材列表【✅直接写完整网址，不猜相对路径】 ==========
+// ========== ✅ 直接完整绝对地址 ==========
 fetch('https://user19038769130.github.io/deepseekwb/assets/gallery/asset-index.json')
-.then(res=>res.json())
+.then(res=>{
+    if(!res.ok) throw new Error('404找不到')
+    return res.json()
+})
 .then(list=>{
     rawList = Array.isArray(list) ? list : []
     render()
