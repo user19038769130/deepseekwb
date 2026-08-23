@@ -1,46 +1,66 @@
-{
-  "petList": [
+
+[
     {
-      "path": "lvbu",
-      "displayName": "吕布桌宠",
-      "author": "XX工作室",
-      "filterKey": "pet-sanguo",
-      "platform": "OpenClaw"
+        "name": "关羽",
+        "category": "三国武将1",
+        "studio": "四八九七九工作室",
+        "folder": "guanyu-pet",
+        "cover": "assets/gallery/三国武将1/guanyu-pet/cover.png",
+        "previews": [
+            "assets/gallery/三国武将1/guanyu-pet/preview-1.png",
+            "assets/gallery/三国武将1/guanyu-pet/preview-2.gif"
+        ]
     },
     {
-      "path": "guanyu",
-      "displayName": "关羽桌宠",
-      "author": "XX工作室",
-      "filterKey": "pet-sanguo",
-      "platform": "OpenClaw"
+        "name": "吕布",
+        "category": "三国武将1",
+        "studio": "四八九七九工作室",
+        "folder": "lvbu-pet",
+        "cover": "assets/gallery/三国武将1/lvbu-pet/cover.png",
+        "previews": []
     },
     {
-      "path": "zhaoyun",
-      "displayName": "赵云桌宠",
-      "author": "XX工作室",
-      "filterKey": "pet-sanguo",
-      "platform": "OpenClaw"
+        "name": "赵云",
+        "category": "三国武将1",
+        "studio": "四八九七九工作室",
+        "folder": "zhaoyu-pet",
+        "cover": "assets/gallery/三国武将1/zhaoyu-pet/a4.png",
+        "previews": [
+            "assets/gallery/三国武将1/zhaoyu-pet/a8.png",
+            "assets/gallery/三国武将1/zhaoyu-pet/a99.gif"
+        ]
     },
     {
-      "path": "maomao",
-      "displayName": "猫猫萌宠",
-      "author": "XX工作室",
-      "filterKey": "pet-meng",
-      "platform": "OpenClaw"
+        "name": "奶牛",
+        "category": "萌宠动物2",
+        "studio": "四八九七九工作室",
+        "folder": "cow-pet",
+        "cover": "assets/gallery/萌宠动物2/cow-pet/aa2.png",
+        "previews": [
+            "assets/gallery/萌宠动物2/cow-pet/aa9.png",
+            "assets/gallery/萌宠动物2/cow-pet/aaa2.gif"
+        ]
     },
     {
-      "path": "laalajiao",
-      "displayName": "辣椒狗",
-      "author": "XX工作室",
-      "filterKey": "pet-meme",
-      "platform": "OpenClaw"
+        "name": "猫咪",
+        "category": "萌宠动物2",
+        "studio": "四八九七九工作室",
+        "folder": "maomi-pet",
+        "cover": "assets/gallery/萌宠动物2/maomi-pet/e4.png",
+        "previews": [
+            "assets/gallery/萌宠动物2/maomi-pet/e7.png",
+            "assets/gallery/萌宠动物2/maomi-pet/gifmake_com_1787229589760_719.gif"
+        ]
     },
     {
-      "path": "xiangjiao-mao",
-      "displayName": "香蕉猫",
-      "author": "XX工作室",
-      "filterKey": "pet-meme",
-      "platform": "OpenClaw"
+        "name": "小猪",
+        "category": "萌宠动物2",
+        "studio": "四八九七九工作室",
+        "folder": "pig-pet",
+        "cover": "assets/gallery/萌宠动物2/pig-pet/qq5.png",
+        "previews": [
+            "assets/gallery/萌宠动物2/pig-pet/qq9.png",
+            "assets/gallery/萌宠动物2/pig-pet/gifmake_com_1787168933.gif"
+        ]
     }
-  ]
-}
+]
