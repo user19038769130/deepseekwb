@@ -1,0 +1,39 @@
+{
+{
+  "galleryName": "OpenClaw 桌面宠物素材库",
+  "galleryDesc": "Q版桌面宠物合集，支持待机、交互动画、AI对话联动，开发者可上传共建",
+  "galleryDescEn": "OpenClaw Desktop Pet Asset Library. Q-version desktop pets with idle & interactive animation, AI linked. Developers are welcome to contribute.",
+  "author": "肆捌玖柒玖玖号服务工作室",
+  "petList": [
+    {
+      "id": "guanyu-pet",
+      "folder": "三国武将1/guanyu-pet",
+      "thumb": "cover.png"
+    },
+    {
+      "id": "lvbu-pet",
+      "folder": "三国武将1/lvbu-pet",
+      "thumb": "cover.png"
+    },
+    {
+      "id": "zhaoyu-pet",
+      "folder": "三国武将1/zhaoyu-pet",
+      "thumb": "cover.png"
+    },
+    {
+      "id": "cow-pet",
+      "folder": "萌宠动物2/cow-pet",
+      "thumb": "aa2.png"
+    },
+    {
+      "id": "maomi-pet",
+      "folder": "萌宠动物2/maomi-pet",
+      "thumb": "e4.png"
+    },
+    {
+      "id": "pig-pet",
+      "folder": "萌宠动物2/pig-pet",
+      "thumb": "qq5.png"
+    }
+  ]
+}
