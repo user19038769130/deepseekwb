@@ -1,0 +1,19 @@
+{
+  "name": "guanyu-pet 关公",
+  "type": "desktop-pet",
+  "targetPackage": "guanyu-pet",
+  "description": "Q版关公桌面宠物，支持待机、招手交互、走动动画，可和AI对话联动，AI回复标记即可触发动画",
+  "descriptionEn": "Q version Guanyu desktop pet, supports idle, interactive wave and walk animations, linked to conversation.",
+  "author": "肆捌玖柒玖玖号服务工作室",
+  "version": "0.1.0",
+  "tags": ["desktop-pet", "三国", "关羽", "AI交互"],
+  "animations": {
+    "idle": {
+      "fps": 12,
+      "frames": [
+        "preview-1.png"
+      ]
+    },
+    "gifPreview": "preview-2.gif"
+  }
+}
