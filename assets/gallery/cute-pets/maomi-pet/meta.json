@@ -1,0 +1,20 @@
+{
+  "name": "小黑猫咪",
+  "type": "desktop-pet",
+  "targetPackage": "maomi-pet",
+  "description": "Q版小黑猫桌面宠物，支持待机、招手交互、跳一跳动画，走动动画，可和AI对话联动，AI回复标记即可触发动作。",
+  "descriptionEn": "Q version black cat desktop pet, supports idle, interactive wave, jump and walk animations, linked with AI conversation.",
+  "author": "肆捌玖柒玖玖号服务工作室",
+  "version": "0.1.0",
+  "tags": ["desktop-pet", "萌宠", "小黑猫", "AI交互"],
+  "animations": {
+    "idle": {
+      "fps": 12,
+      "frames": [
+        "e4.png",
+        "e7.png"
+      ]
+    },
+    "gifPreview": "gifmake_com_1787229589760_719.gif"
+  }
+}
