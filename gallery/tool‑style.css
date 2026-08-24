@@ -1,0 +1,21 @@
+.wrap-box{
+    border:1px solid #ccc;
+    padding:16px;
+    border-radius:8px;
+    max-width:960px;
+    margin:20px 0;
+}
+.grid-three{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:16px;
+}
+.grid-two{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+.tip-text{
+    font-size:13px;
+    color:#555;
+}
