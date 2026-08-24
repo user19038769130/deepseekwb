@@ -24,8 +24,8 @@ let slideTimer = setInterval(autoSlide, 3500);
 track.onmouseenter = ()=> clearInterval(slideTimer);
 track.onmouseleave = ()=> slideTimer = setInterval(autoSlide,3500);
 
-// ========== JSON读取路径 ==========
-fetch('../assets/gallery/asset-index.json')
+// ========== JSON读取（加版本号防缓存） ==========
+fetch('../assets/gallery/asset-index.json?v=4')
 .then(res=>{
     if(!res.ok) throw new Error('找不到文件')
     return res.json()
@@ -49,11 +49,11 @@ function fillRecommendTop4(top4){
     const domList = track.querySelectorAll('.recommend-item');
     top4.forEach((item,idx)=>{
         if(!domList[idx]) return;
-        domList[idx].innerHTML = `<img src="../${item.cover}" alt="${item.name}">`
+        domList[idx].innerHTML = `<img src="../${item.cover}" alt="${item.name}" style="width:100%;height:100%;object-fit:cover;">`
     })
 }
 
-// ========== 素材列表渲染 ==========
+// ========== 素材列表渲染【已加上懒加载】 ==========
 function render(){
     galleryEl.innerHTML = ""
     const safeList = Array.isArray(rawList) ? rawList : []
@@ -71,12 +71,12 @@ function render(){
         card.className = 'card'
         const thumbSrc = `../${item.cover}`
         card.innerHTML = `
-            <img class="card-img" src="${thumbSrc}" onerror="this.style.display='none'">
+            <img class="card-img" loading="lazy" src="${thumbSrc}" onerror="this.style.display='none'">
             <div class="card-body">
                 <span class="card-tag">${item.category}</span>
                 <div class="card-title">${item.name}</div>
                 <div class="card-meta">作者：${item.author}</div>
-                <a class="dl-btn" href="../${item.cover}" download>📥 下载预览图</a>
+                <a class="dl-btn" href="../${item.cover}" download>📥 单张预览图</a>
             </div>
         `
         card.onclick = ()=> openPetPreview(item)
@@ -108,9 +108,10 @@ function closeModal(){
 }
 modal.onclick = e=>{if(e.target===modal) closeModal()}
 
-// 绑定弹窗三个切换按钮
-document.querySelectorAll('.action-group button').forEach(btn=>{
-    btn.onclick = ()=>{
+// ✅ 修复：全局事件委托，按钮永久点击生效
+document.addEventListener('click', function(e){
+    const btn = e.target.closest('.action-group button')
+    if(btn){
         const type = btn.dataset.act
         switchAnim(type)
     }
