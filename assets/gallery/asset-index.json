@@ -2,7 +2,7 @@
     {
         "name": "aa2土拨鼠",
         "cover": "assets/gallery/cute-pets/cow-pet/aa2.png",
-        "category": "cute-pets",
+        "category": "pet-meng",
         "author": "四八九七九工作室",
         "idle": [
              "src/pets/cute-pets/cow-pet/idle/aa7.png",
