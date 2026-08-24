@@ -1,14 +1,23 @@
-
-  [
+[
     {
-        "name": "aa2.png",
-        "category": "cute-pets",
-        "studio": "四八九七九工作室",
-        "folder": "cow-pet",
+        "name": "aa2土拨鼠",
         "cover": "assets/gallery/cute-pets/cow-pet/aa2.png",
-        "previews": [
-            "assets/gallery/cute-pets/cow-pet/aa9.png",
-            "assets/gallery/cute-pets/cow-pet/aaa2.gif"
+        "category": "cute-pets",
+        "author": "四八九七九工作室",
+        "idle": [
+            "assets/gallery/cute-pets/cow-pet/idle_01.png",
+            "assets/gallery/cute-pets/cow-pet/idle_02.png",
+            "assets/gallery/cute-pets/cow-pet/idle_03.png"
+        ],
+        "walk": [
+            "assets/gallery/cute-pets/cow-pet/walk_01.png",
+            "assets/gallery/cute-pets/cow-pet/walk_02.png",
+            "assets/gallery/cute-pets/cow-pet/walk_03.png"
+        ],
+        "click": [
+            "assets/gallery/cute-pets/cow-pet/click_01.png",
+            "assets/gallery/cute-pets/cow-pet/click_02.png",
+            "assets/gallery/cute-pets/cow-pet/click_03.png"
         ]
     }
 ]
