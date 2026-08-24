@@ -5,19 +5,20 @@
         "category": "cute-pets",
         "author": "四八九七九工作室",
         "idle": [
-            "assets/gallery/cute-pets/cow-pet/idle_01.png",
-            "assets/gallery/cute-pets/cow-pet/idle_02.png",
-            "assets/gallery/cute-pets/cow-pet/idle_03.png"
-        ],
-        "walk": [
-            "assets/gallery/cute-pets/cow-pet/walk_01.png",
-            "assets/gallery/cute-pets/cow-pet/walk_02.png",
-            "assets/gallery/cute-pets/cow-pet/walk_03.png"
-        ],
-        "click": [
-            "assets/gallery/cute-pets/cow-pet/click_01.png",
-            "assets/gallery/cute-pets/cow-pet/click_02.png",
-            "assets/gallery/cute-pets/cow-pet/click_03.png"
-        ]
+             "src/pets/cute-pets/cow-pet/idle/aa7.png",
+             "src/pets/cute-pets/cow-pet/idle/aa8.png",
+             "src/pets/cute-pets/cow-pet/idle/aa9.png"
+         ],
+         "walk": [
+             "src/pets/cute-pets/cow-pet/walk/aa4.png",
+             "src/pets/cute-pets/cow-pet/walk/aa5.png",
+             "src/pets/cute-pets/cow-pet/walk/aa6.png"
+         ],
+         "click": [
+             "src/pets/cute-pets/cow-pet/click/aa1.png",
+             "src/pets/cute-pets/cow-pet/click/aa2.png",
+             "src/pets/cute-pets/cow-pet/click/aa3.png"
+         ]
+        
     }
 ]
