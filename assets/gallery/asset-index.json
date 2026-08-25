@@ -1,28 +1,30 @@
 [
-    {
-        "name": "土拨鼠",
-        "cover": "assets/gallery/cute-pets/marmot-pet/aa2.png",
+     {
+        "name": "aa2土拨鼠",
+        "cover": "assets/gallery/cute-pets/cow-pet/aa2.png",
         "category": "pet-meng",
         "author": "四八九七九工作室",
         "idle": [
-            "src/pets/cute-pets/marmot-pet/idle/aa7.png",
-            "src/pets/cute-pets/marmot-pet/idle/aa8.png",
-            "src/pets/cute-pets/marmot-pet/idle/aa9.png"
-        ],
-        "walk": [
-            "src/pets/cute-pets/marmot-pet/walk/aa4.png",
-            "src/pets/cute-pets/marmot-pet/walk/aa5.png",
-            "src/pets/cute-pets/marmot-pet/walk/aa6.png"
-        ],
-        "click": [
-            "src/pets/cute-pets/marmot-pet/click/aa1.png",
-            "src/pets/cute-pets/marmot-pet/click/aa2.png",
-            "src/pets/cute-pets/marmot-pet/click/aa3.png"
-        ]
-    },
+             "src/pets/cute-pets/cow-pet/idle/aa7.png",
+             "src/pets/cute-pets/cow-pet/idle/aa8.png",
+             "src/pets/cute-pets/cow-pet/idle/aa9.png"
+         ],
+         "walk": [
+             "src/pets/cute-pets/cow-pet/walk/aa4.png",
+             "src/pets/cute-pets/cow-pet/walk/aa5.png",
+             "src/pets/cute-pets/cow-pet/walk/aa6.png"
+         ],
+         "click": [
+             "src/pets/cute-pets/cow-pet/click/aa1.png",
+             "src/pets/cute-pets/cow-pet/click/aa2.png",
+             "src/pets/cute-pets/cow-pet/click/aa3.png"
+         ]
+        
+    }
+  
     {
         "name": "小猪仔",
-        "cover": "assets/gallery/cute-pets/pig-pet/qq5.png",
+        "cover": "assets/gallery/cute-pets/pig-pet/qq9.png",
         "category": "pet-meng",
         "author": "四八九七九工作室",
         "idle": [
@@ -43,7 +45,7 @@
     },
     {
         "name": "奶牛猫",
-        "cover": "assets/gallery/cute-pets/cowcat-pet/c2.png",
+        "cover": "assets/gallery/cute-pets/cowcat-pet/e4.png",
         "category": "pet-meng",
         "author": "四八九七九工作室",
         "idle": [
@@ -64,8 +66,8 @@
     },
     {
         "name": "赵云",
-        "cover": "assets/gallery/cute-pets/zhaoyun-pet/z2.png",
-        "category": "pet-meng",
+        "cover": "assets/gallery/cute-pets/zhaoyun-pet/a4.png",
+        "category": "wang-gen",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/zhaoyun-pet/idle/z7.png",
@@ -85,8 +87,8 @@
     },
     {
         "name": "关羽",
-        "cover": "assets/gallery/cute-pets/guanyu-pet/g2.png",
-        "category": "pet-meng",
+        "cover": "assets/gallery/cute-pets/guanyu-pet/preview-1.png",
+        "category": "wang-gen",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/guanyu-pet/idle/g7.png",
@@ -106,7 +108,7 @@
     },
     {
         "name": "吕布",
-        "cover": "assets/gallery/cute-pets/lvbu-pet/l2.png",
+        "cover": "assets/wang-gen/cute-pets/lvbu-pet/preview-1.png",
         "category": "pet-meng",
         "author": "四八九七九工作室",
         "idle": [
