@@ -52,9 +52,9 @@
             "src/pets/cute-pets/cowcat-pet/idle/e6.png"
         ],
         "walk": [
-            "src/pets/cute-pets/cowcat-pet/walk/e7.png",
-            "src/pets/cute-pets/cowcat-pet/walk/e8.png",
-            "src/pets/cute-pets/cowcat-pet/walk/e9.png"
+            "src/pets/cute-pets/maomi-pet/walk/e7.png",
+            "src/pets/cute-pets/maomi-pet/walk/e8.png",
+            "src/pets/cute-pets/maomi-pet/walk/e9.png"
         ],
         "click": [
             "src/pets/cute-pets/cowcat-pet/click/e1.png",
