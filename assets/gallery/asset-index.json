@@ -2,7 +2,7 @@
     {
         "name": "aa2土拨鼠",
         "cover": "assets/gallery/cute-pets/cow-pet/aa2.png",
-        "category": "pet-meng",
+        "category": "cute-pets",
         "author": "四八九七九工作室",
         "idle": [
              "src/pets/cute-pets/cow-pet/idle/aa7.png",
@@ -23,7 +23,7 @@
     {
         "name": "小猪仔",
         "cover": "assets/gallery/cute-pets/pig-pet/qq9.png",
-        "category": "pet-meng",
+        "category": "cute-pets",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/pig-pet/idle/qq4.png",
@@ -44,7 +44,7 @@
     {
         "name": "奶牛猫",
         "cover": "assets/gallery/cute-pets/cowcat-pet/e4.png",
-        "category": "pet-meng",
+        "category": "cute-pets",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/cowcat-pet/idle/e4.png",
