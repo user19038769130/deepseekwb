@@ -55,7 +55,7 @@ document.getElementById('btnSeq2Gif').onclick = async ()=>{
   const delay = Number(document.getElementById('gifDelay').value) || 200;
   if(files.length<2) return alert("至少上传2张PNG合成动画");
 
-  const gif = new GIF({workers:2, quality:10});
+  const gif = new GIF({workers:2, quality:10,workerScript: "./lib/gif.worker.js"});
   for(const f of files){
     const img = new Image();
  img.src = URL.createObjectURL(f);
