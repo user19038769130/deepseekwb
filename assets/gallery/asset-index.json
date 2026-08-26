@@ -65,7 +65,7 @@
     {
         "name": "赵云",
         "cover": "assets/gallery/cute-pets/zhaoyun-pet/a4.png",
-        "category": "wang-gen",
+        "category": "pet‑sanguo",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/zhaoyun-pet/idle/q001.png",
@@ -86,7 +86,7 @@
     {
         "name": "关羽",
         "cover": "assets/gallery/cute-pets/guanyu-pet/preview-1.png",
-        "category": "wang-gen",
+        "category": "pet‑sanguo",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/guanyu-pet/idle/q1.png",
@@ -107,7 +107,7 @@
     {
         "name": "吕布",
         "cover": "assets/wang-gen/cute-pets/lvbu-pet/preview-1.png",
-        "category": "pet-meng",
+        "category": "pet‑sanguo",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/lvbu-pet/idle/l7.png",
@@ -123,6 +123,69 @@
             "src/pets/cute-pets/lvbu-pet/click/l1.png",
             "src/pets/cute-pets/lvbu-pet/click/l2.png",
             "src/pets/cute-pets/lvbu-pet/click/l3.png"
+        ]
+    },
+    {
+        "name": "玩梗素材",
+        "cover": "assets/gallery/cute-pets/zhaoyun-pet/.png",
+        "category": "pet-meme",
+        "author": "四八九七九工作室",
+        "idle": [
+            "src/pets/cute-pets/zhaoyun-pet/idle/.png",
+            "src/pets/cute-pets/zhaoyun-pet/idle/.png",
+            "src/pets/cute-pets/zhaoyun-pet/idle/.png"
+        ],
+        "walk": [
+            "src/pets/cute-pets/zhaoyun-pet/walk/.png",
+            "src/pets/cute-pets/zhaoyun-pet/walk/.png",
+            "src/pets/cute-pets/zhaoyun-pet/walk/.png"
+        ],
+        "click": [
+            "src/pets/cute-pets/zhaoyun-pet/click/.png",
+            "src/pets/cute-pets/zhaoyun-pet/click/.png",
+            "src/pets/cute-pets/zhaoyun-pet/click/.png"
+        ]
+    },
+    {
+        "name": "玩梗素材2",
+        "cover": "assets/gallery/cute-pets/guanyu-pet/preview-1.png",
+        "category": "pet-meme",
+        "author": "四八九七九工作室",
+        "idle": [
+            "src/pets/cute-pets/guanyu-pet/idle/.png",
+            "src/pets/cute-pets/guanyu-pet/idle/.png",
+            "src/pets/cute-pets/guanyu-pet/idle/.png"
+        ],
+        "walk": [
+            "src/pets/cute-pets/guanyu-pet/walk/.png",
+            "src/pets/cute-pets/guanyu-pet/walk/.png",
+            "src/pets/cute-pets/guanyu-pet/walk/.png"
+        ],
+        "click": [
+            "src/pets/cute-pets/guanyu-pet/click/0.png",
+            "src/pets/cute-pets/guanyu-pet/click/0.png",
+            "src/pets/cute-pets/guanyu-pet/click/0.png"
+        ]
+    },
+    {
+        "name": "玩梗素材3",
+        "cover": "assets/wang-gen/cute-pets/lvbu-pet/.png",
+        "category": "pet-meme",
+        "author": "四八九七九工作室",
+        "idle": [
+            "src/pets/cute-pets/lvbu-pet/idle/.png",
+            "src/pets/cute-pets/lvbu-pet/idle/.png",
+            "src/pets/cute-pets/lvbu-pet/idle/.png"
+        ],
+        "walk": [
+            "src/pets/cute-pets/lvbu-pet/walk/l4.png",
+            "src/pets/cute-pets/lvbu-pet/walk/l5.png",
+            "src/pets/cute-pets/lvbu-pet/walk/l6.png"
+        ],
+        "click": [
+            "src/pets/cute-pets/lvbu-pet/click/.png",
+            "src/pets/cute-pets/lvbu-pet/click/.png",
+            "src/pets/cute-pets/lvbu-pet/click/.png"
         ]
     }
 ]
