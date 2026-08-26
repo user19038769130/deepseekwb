@@ -64,7 +64,7 @@
     },
     {
         "name": "赵云",
-        "cover": "assets/gallery/cute-pets/zhaoyun-pet/a4.png",
+        "cover": "assets/gallery/wang-gen/zhaoyun-pet/a4.png",
         "category": "pet‑sanguo",
         "author": "四八九七九工作室",
         "idle": [
@@ -85,7 +85,7 @@
     },
     {
         "name": "关羽",
-        "cover": "assets/gallery/cute-pets/guanyu-pet/preview-1.png",
+        "cover": "assets/gallery/wang-gen/guanyu-pet/preview-1.png",
         "category": "pet‑sanguo",
         "author": "四八九七九工作室",
         "idle": [
@@ -106,7 +106,7 @@
     },
     {
         "name": "吕布",
-        "cover": "assets/wang-gen/cute-pets/lvbu-pet/preview-1.png",
+        "cover": "assets/wang-gen/wang-gen/lvbu-pet/preview-1.png",
         "category": "pet‑sanguo",
         "author": "四八九七九工作室",
         "idle": [
