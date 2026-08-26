@@ -1,5 +1,5 @@
 [
-     {
+    {
         "name": "aa2土拨鼠",
         "cover": "assets/gallery/cute-pets/cow-pet/aa2.png",
         "category": "pet-meng",
@@ -19,9 +19,7 @@
              "src/pets/cute-pets/cow-pet/click/aa2.png",
              "src/pets/cute-pets/cow-pet/click/aa3.png"
          ]
-        
-    }
-  
+    },
     {
         "name": "小猪仔",
         "cover": "assets/gallery/cute-pets/pig-pet/qq9.png",
