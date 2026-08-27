@@ -64,8 +64,8 @@
     },
     {
         "name": "赵云",
-        "cover": "assets/gallery/wang-gen/zhaoyun-pet/a4.png",
-        "category": "pet‑sanguo",
+        "cover": "assets/gallery/wang-gen/zhaoyu-pet/a4.png",
+        "category": "pet-sanguo",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/zhaoyun-pet/idle/q001.png",
@@ -86,7 +86,7 @@
     {
         "name": "关羽",
         "cover": "assets/gallery/wang-gen/guanyu-pet/preview-1.png",
-        "category": "pet‑sanguo",
+        "category": "pet-sanguo",
         "author": "四八九七九工作室",
         "idle": [
             "src/pets/cute-pets/guanyu-pet/idle/q1.png",
