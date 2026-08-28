@@ -63,24 +63,25 @@
         ]
     },
      {
-        "name": "关羽",
+        "name": "赵云",
         "cover": "assets/gallery/wang-gen/zhaoyu-pet/a4.png",
-        "category": "wang-gen",
+        "category": "pet-sanguo",
         "author": "四八九七九工作室",
         "idle": [
-            "src/pets/wang-gen/guanyu-pet/idle/q1.png",
-            "src/pets/wang-gen/guanyu-pet/idle/q2.png",
-            "src/pets/wang-gen/guanyu-pet/idle/q3.png"
+            "src/pets/cute-pets/zhaoyu-pet/idle/a1.png",
+            "src/pets/cute-pets/zhaoyu-pet/idle/a2.png",
+            "src/pets/cute-pets/zhaoyu-pet/idle/a3.png"
+        
         ],
         "walk": [
-            "src/pets/wang-gen/guanyu-pet/walk/qq1.png",
-            "src/pets/wang-gen/guanyu-pet/walk/qq2.png",
-            "src/pets/wang-gen/guanyu-pet/walk/qq3.png"
+            "src/pets/cute-pets/guanyu-pet/walk/a1.png",
+            "src/pets/cute-pets/guanyu-pet/walk/a2.png",
+            "src/pets/cute-pets/guanyu-pet/walk/a3.png"
         ],
         "click": [
-            "src/pets/wang-gen/guanyu-pet/click/01.png",
-            "src/pets/wang-gen/guanyu-pet/click/02.png",
-            "src/pets/wang-gen/guanyu-pet/click/03.png"
+            "src/pets/cute-pets/zhaoyu-pet/click/a1.png",
+            "src/pets/cute-pets/zhaoyu-pet/click/a2.png",
+            "src/pets/cute-pets/zhaoyu-pet/click/a3.png"
         ]
     },
     {
